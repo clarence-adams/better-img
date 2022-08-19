@@ -1,0 +1,14 @@
+html {
+	font-family: sans-serif;
+}
+
+h1 {
+		font-size: 1.875rem;
+		font-weight: 700;
+}
+
+h2 {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+		font-weight: 500;
+}

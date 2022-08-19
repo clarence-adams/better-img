@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+wasm/target
+wasm/**/*.rs.bk
+wasm/Cargo.lock
+wasm/bin/
+was/pkg/
+wasm/wasm-pack.log/wasm/pkg
+.env
+.env.*
+!.env.example
