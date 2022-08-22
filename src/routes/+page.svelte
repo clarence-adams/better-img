@@ -11,8 +11,12 @@
 	const getImages = async () => {
 		const formData = new FormData(form);
 		const image = formData.get('image');
+
+		// convert image file to an array of bytes
+		const buffer = await image.arrayBuffer();
+		const imageData = new Uint8Array(buffer);
 		console.log(image);
-		greet(image.name);
+		greet(imageData);
 	};
 </script>
 

@@ -14,7 +14,8 @@ extern "C" {
 }
 
 #[wasm_bindgen]
-pub fn greet(file_name: String) {
-    let greeting = format!("Hello! Your filename is {}", file_name);
+pub fn greet(image: &[u8]) {
+    let first_byte = image[0];
+    let greeting = format!("Hello! Your file {}", first_byte);
     alert(&greeting);
 }
